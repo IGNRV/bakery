@@ -1,0 +1,25 @@
+.inputText {
+    position: relative;
+
+    label {
+        position: absolute;
+        top: 3px;
+        left: 15px;
+        color: #666666;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    input {
+        color: #959595;
+        font-size: 16px;
+        font-weight: 400;
+        height: 50px;
+        width: 100%;
+        border: none;
+        background-color: #ffffff;
+        border-bottom: 3px solid #959595;
+        padding-left: 0 15px;
+        padding-top: 20px;
+    }
+}
