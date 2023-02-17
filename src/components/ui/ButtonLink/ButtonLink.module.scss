@@ -2,5 +2,11 @@
     a {
         color: #0000ff;
         font-weight: 500;
+        transition: all 0.3s;
+
+    }
+
+    &:active {
+        transform: scale(0.9);
     }
 }

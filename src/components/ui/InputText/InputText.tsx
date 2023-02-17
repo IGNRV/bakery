@@ -2,15 +2,16 @@ import React from 'react';
 import styles from "./InputText.module.scss";
 
 interface IInputText {
+    text: string;
     label: string;
     width: string;
 }
 
-const InputText = ({ label, width }: IInputText) => {
+const InputText = ({ type = "text", label, width }: IInputText) => {
   return (
     <div className={styles.inputText} style={{ width }}>
         <label>{label}</label>
-        <input type="text" />
+        <input type={type} />
     </div>
   );
 };

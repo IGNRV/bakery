@@ -14,7 +14,9 @@ const Sidebar: FC<SidebarProps> = ({ visible, onClose }) => {
   };
 
   return (
-    <div className={`sidebar${visible ? " visible" : ""}`} onClick={handleBackdropClick}>
+    <div
+     className={styles.sidebar}
+     style={{left:visible?"0":"-300px"}} onClick={handleBackdropClick}>
       <div className="sidebar-content">
           <div>
             <div className={styles.contenedor}>

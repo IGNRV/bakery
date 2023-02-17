@@ -19,7 +19,20 @@
         border: none;
         background-color: #ffffff;
         border-bottom: 3px solid #959595;
-        padding-left: 0 15px;
+        padding: 0 15px;
         padding-top: 20px;
+
+        &:focus {
+            background-color: rgb(237, 255, 251);
+        }
+
+        /* 
+        padding
+        padding-left
+        padding-top
+        padding-right
+        padding-bottom
+        */
+
     }
 }
