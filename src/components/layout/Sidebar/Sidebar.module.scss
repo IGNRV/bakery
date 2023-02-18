@@ -1,187 +1,159 @@
 .sidebar {
   position: fixed;
-  top: 0;
-  left: -300px;
-  width: 250px;
+  top: 50px;
+  width: 249px;
   height: 100%;
   background-color: #474436;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: left 0.3s ease-in-out;
   z-index: 999;
-  top: 50px;
   overflow-y: auto;
-  transition: left 0.3s;
+  transition: left 0.3s ease-in-out;
+  
+  .sidebar--visible {
+  left: 0;
+  }
 
-}
-
-.title {
-width: 65px;
-height: 30px;
-left: 20px;
-margin-top: 5px;
-margin-left:20px;
-
-font-family: 'Oswald', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height */
-margin-bottom: 0;
-color: #FFFFFF;
-}
-
-.title1 {
-    width: 250px;
-    height: 30px;
-    left: 20px;
-    margin-top: 5px;
-    margin-left:20px;
-    
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    margin-bottom: 0;
-    color: #FFFFFF;
-    }
-
-    .title2 {
-        width: 250px;
+      .title {
+        width: 65px;
         height: 30px;
         left: 20px;
         margin-top: 5px;
         margin-left:20px;
-        
         font-family: 'Oswald', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
-        /* identical to box height */
         margin-bottom: 0;
         color: #FFFFFF;
         }
 
-.contenedor {
-    box-sizing: border-box;
+      .title1 {
+        width: 250px;
+        height: 30px;
+        left: 20px;
+        margin-top: 5px;
+        margin-left:20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+        color: #FFFFFF;
+        }
 
-    position: absolute;
-    width: 250px;
-    height: 41px;
-    left: 0px;
-    top: 0px;
-    border-right: 1px solid #959595;
+      .title2 {
+        width: 250px;
+        height: 30px;
+        left: 20px;
+        margin-top: 5px;
+        margin-left:20px;
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+        color: #FFFFFF;
+        }
+      
+        .contenedor {
+          box-sizing: border-box;
+          position: absolute;
+          width: 250px;
+          height: 41px;
+          left: 0px;
+          top: 0px;
+          border-right: 1px solid #959595;
+          background: #282517;
+          border-top: 1px solid #888A8C;
+      }
+
+      .contenedor1 {
+        box-sizing: border-box;
+        position: absolute;
+        width: 250px;
+        height: 41px;
+        left: 0px;
+        top: 215px;
+        border-right: 1px solid #959595;
+        background: #282517;
+        border-top: 1px solid #888A8C;
+      }
     
-    background: #282517;
-    border-top: 1px solid #888A8C;
-}
+      .contenedor2 {
+          box-sizing: border-box;
+          position: absolute;
+          width: 250px;
+          height: 41px;
+          left: 0px;
+          top: 420px;
+          border-right: 1px solid #959595;
+          background: #282517;
+          border-top: 1px solid #888A8C;
+      }
 
-.contenedor1 {
-    box-sizing: border-box;
-
-position: absolute;
-width: 250px;
-height: 41px;
-left: 0px;
-top: 215px;
-border-right: 1px solid #959595;
-
-
-background: #282517;
-border-top: 1px solid #888A8C;
-}
-
-.contenedor2 {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 250px;
-    height: 41px;
-    left: 0px;
-    top: 420px;
-    border-right: 1px solid #959595;
-
+      .ul {
+        box-sizing: border-box;
+        position: absolute;
+        width: 250px;
+        height: 174px;
+        left: 0px;
+        top: 41px;
+        background: #474436;
+        border-right: 1px solid #959595;
+        list-style-type: none;
+      }
     
-    background: #282517;
-    border-top: 1px solid #888A8C;
+      .ul1 {
+          box-sizing: border-box;
+          position: absolute;
+          width: 250px;
+          height: 164px;
+          left: 0px;
+          top: 256px;    
+          background: #474436;
+          border-right: 1px solid #959595;
+          list-style-type: none;
+      }
+      
+      .ul2 {
+          box-sizing: border-box;
+          position: absolute;
+          width: 250px;
+          height: 160px;
+          left: 0px;
+          top: 461px;    
+          background: #474436;
+          border-right: 1px solid #959595;
+          list-style-type: none;
+      }
+
+      .li {
+        width: 219px;
+        height: 27px;
+        margin-left: 30px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        background-color: #474436;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #959595;
+      }
+      
+      .li:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+    
 }
 
-.ul {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 174px;
-    left: 0px;
-    top: 41px;
-    background: #474436;
-    border-right: 1px solid #959595;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    list-style-type: none;
-}
-
-.ul1 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 164px;
-    left: 0px;
-    top: 256px;    
-    background: #474436;
-    border-right: 1px solid #959595;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    list-style-type: none;
-
-}
-
-.ul2 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 475px;
-    left: 0px;
-    top: 461px;    
-    background: #474436;
-    border-right: 1px solid #959595;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    list-style-type: none;
-
-}
-
-/* .ul2 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 100vh;
-    left: 0px;
-    top: 0px;
-    background: #474436;
-    border-right: 1px solid #959595;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  } */
-  
 
 
-.li {
-  /* Tortas estándar */
 
 
-width: 219px;
-height: 27px;
-margin-left: 30px;
-margin-top: 4px;
-margin-bottom: 4px;
-background-color: #474436;
-
-font-family: 'Oswald';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 27px;
-/* identical to box height */
 
 
-color: #959595;
-}

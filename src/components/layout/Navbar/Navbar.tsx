@@ -27,33 +27,35 @@ const Navbar = () => {
               <span 
                 className="material-symbols-outlined" 
                 style={{ 
-                  color: isSidebarOpen ? "#fff" : isHovering ? "#fff" : "#959595", 
-                  marginTop: "13px",
-                  backgroundColor: isSidebarOpen ? "#000" : isHovering ? "#000" : "transparent",
-                  /* width: isSidebarOpen ? "35px" : isHovering ? "35px" : "initial",
-                  height: isSidebarOpen ? "35px" : isHovering ? "35px" : "initial", */
+                  marginTop: "8px", 
+                  backgroundColor: isSidebarOpen ? "#000" : "transparent",
+                  width: "35px",
+                  height: "35px",
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center"
-                }} 
+                  alignItems: "center",
+                  cursor: "pointer",
+                  color: "#959595",
+                  userSelect: "none"
+                }}
                 onClick={toggleSidebar}
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}>
                 menu
               </span>
               <Row gap="10px">
-                <span className="material-symbols-outlined" style={{ color: "#959595", marginTop: "13px" }}>
-                  monitoring
-                </span>
-                <span className="material-symbols-outlined" style={{ color: "#959595", marginTop: "13px" }}>
-                  qr_code_2
-                </span>
-                <span className="material-symbols-outlined" style={{ color: "#959595", marginTop: "13px" }}>
-                  inbox
-                </span>
-                <span className="material-symbols-outlined" style={{ color: "#959595", marginTop: "13px" }}>
-                  person
-                </span>
+              <span className="material-symbols-outlined hov" style={{ color: "#959595", userSelect: "none", padding: "5px 0 0 0", backgroundColor: "transparent"  }}>
+                monitoring
+              </span>
+              <span className="material-symbols-outlined hov" style={{ color: "#959595", userSelect: "none", padding: "5px 0 0 0", backgroundColor: "transparent"  }}>
+                qr_code_2
+              </span>
+              <span className="material-symbols-outlined hov" style={{ color: "#959595", userSelect: "none", padding: "5px 0 0 0", backgroundColor: "transparent"  }}>
+                inbox
+              </span>
+              <span className="material-symbols-outlined hov" style={{ color: "#959595", userSelect: "none", padding: "5px 0 0 0", backgroundColor: "transparent"  }}>
+                person
+              </span>
               </Row>
             </Row>
             {isSidebarOpen && (

@@ -10,5 +10,18 @@ background: #2E3D4D;
   .div {
     color: white;
   }
+
+  span {
+    cursor:pointer;
+
+    &:hover {
+      color: brown;
+      background-color: blue;
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  
 }
 
